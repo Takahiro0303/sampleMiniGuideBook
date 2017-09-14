@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MoalBoal</key>
+	<dict>
+		<key>descruotion</key>
+		<string>いいところです</string>
+		<key>image</key>
+		<string>2.png</string>
+		<key>latitude</key>
+		<string>9.955661</string>
+		<key>longitude</key>
+		<string>123.40076</string>
+	</dict>
+	<key>Ayala</key>
+	<dict>
+		<key>descruotion</key>
+		<string>Cebu中心地</string>
+		<key>image</key>
+		<string>ayala.jpg</string>
+		<key>latitude</key>
+		<string>10.317347</string>
+		<key>longitude</key>
+		<string>123.905759</string>
+	</dict>
+</dict>
+</plist>
