@@ -47,6 +47,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
        
         cell.textLabel?.text = placeList[indexPath.row]
+        cell.imageView?.image = UIImage(named: "2.png")
 //        cell.textLabel?.text = "\(indexPath.row)行目"
         //文字を設定したセルを返す
         return cell

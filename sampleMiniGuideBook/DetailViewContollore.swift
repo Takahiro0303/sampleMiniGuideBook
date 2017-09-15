@@ -97,25 +97,14 @@ class DetailViewContollore: UIViewController {
     }
     @IBAction func tapAction(_ sender: UIBarButtonItem) {
         
-        //プロパティーリスト読み込み
-        //        ファイルパスを取得(エリア名が格納されているプロパティリスト)
-        let filePath = Bundle.main.path(forResource: "guidList", ofType: "plist")
-        
-        //        ファイルの内容を読み込んでディクショナリー型に格納
-        let dic = NSDictionary(contentsOfFile:filePath!)
-        
-        let dic_class = dic?[scSelectedName] as! NSDictionary
-        
-        dic_class["image"]
-        
         //    アクティビティーを作成（インスタンス化）
         //    イニシャライズ（初期化）＝インスタンス化したものを宣言した変数に直接代入すること。
         //    activityItems　シェアしたい情報の配列（中身はAny型、なんでもいける）
-        //let controller = UIActivityViewController(activityItems: , applicationActivities: nil)
+        let controller = UIActivityViewController(activityItems: [myImageView.image], applicationActivities: nil)
         
         //    アクティビティーを表示
         //    presentとはモーダル表示方法（主にAlart,ActionSheet,ActivitiViewに使用されるが、通常サイズの画面をモーダル表示する時にも使える）
-        //present(controller,animated: true,completion: nil)
+        present(controller,animated: true,completion: nil)
 
         
     }
